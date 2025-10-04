@@ -1,29 +1,25 @@
-package com.example.demo.dto;
+package com.example.demo.Dto;
 
 public class ProdutoDto {
 
     private String nome;
     private Double preco;
+    private Integer categoriaId;
     
-    public ProdutoDto(String nome, Double preco) {
+    public ProdutoDto(String nome, Double preco, Integer categoriaId) {
         this.nome = nome;
         this.preco = preco;
+        this.categoriaId = categoriaId;
     }
 
     public String getNome() {
         return nome;
     }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
     public Double getPreco() {
         return preco;
     }
-
-    public void setPreco(Double preco) {
-        this.preco = preco;
+    public Integer getCategoriaId() {
+        return categoriaId;
     }
-
+    
 }

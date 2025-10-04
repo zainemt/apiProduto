@@ -2,10 +2,13 @@ package com.example.demo.Domain.Produto;
 
 import java.util.UUID;
 
+import com.example.demo.Domain.Categoria.Categoria;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity //Marcação que indica que a entidade será uma tabela do banco
@@ -17,13 +20,18 @@ public class Produto {
     private UUID id;
     private String nome;
     private Double preco;
+    
+    @ManyToOne
+    @JoinColumn(name = "categoria_id")
+    private Categoria categoria;
 
     public Produto() {}
 
-    public Produto(UUID id, String nome, Double preco) {
+    public Produto(UUID id, String nome, Double preco, Categoria categoria) {
         this.id = id;
         this.nome = nome;
         this.preco = preco;
+        this.categoria = categoria; 
     }
 
     public UUID getId() {
@@ -44,6 +52,14 @@ public class Produto {
 
     public void setPreco(Double preco) {
         this.preco = preco;
+    }
+
+    public Categoria getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(Categoria categoria) {
+        this.categoria = categoria;
     }
 
     @Override
@@ -75,5 +91,7 @@ public class Produto {
     public String toString() {
         return "Produto [id=" + id + ", nome=" + nome + ", preco=" + preco + "]";
     }
+
+    
 
 }
