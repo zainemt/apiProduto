@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.Domain.Categoria.Categoria;
-import com.example.demo.Dto.CategoriaDto;
+import com.example.demo.dto.CategoriaDto;
 import com.example.demo.Mapper.CategoriaMapper;
 import com.example.demo.Repositories.CategoriaRepository;
 

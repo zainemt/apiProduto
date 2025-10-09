@@ -5,8 +5,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.demo.dto.CategoriaDto;
 import com.example.demo.Domain.Categoria.Categoria;
-import com.example.demo.Dto.CategoriaDto;
 import com.example.demo.Service.CategoriaService;
 
 import org.springframework.web.bind.annotation.GetMapping;

@@ -7,7 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.Dto.ProdutoDto;
+import com.example.demo.dto.ProdutoDto;
 import com.example.demo.Service.ProdutoService;
 
 import org.springframework.web.bind.annotation.GetMapping;

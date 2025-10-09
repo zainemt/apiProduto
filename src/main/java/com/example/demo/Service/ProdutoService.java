@@ -8,8 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.example.demo.Domain.Categoria.Categoria;
 import com.example.demo.Domain.Produto.Produto;
-import com.example.demo.Dto.CategoriaDto;
-import com.example.demo.Dto.ProdutoDto;
+import com.example.demo.dto.ProdutoDto;
 import com.example.demo.Mapper.ProdutoMapper;
 import com.example.demo.Repositories.CategoriaRepository;
 import com.example.demo.Repositories.ProdutoRepository;

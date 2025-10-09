@@ -3,7 +3,7 @@ package com.example.demo.Mapper;
 import org.springframework.stereotype.Component;
 
 import com.example.demo.Domain.Categoria.Categoria;
-import com.example.demo.Dto.CategoriaDto;
+import com.example.demo.dto.CategoriaDto;
 
 @Component
 public class CategoriaMapper {

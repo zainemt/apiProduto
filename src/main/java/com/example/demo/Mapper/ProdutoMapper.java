@@ -4,7 +4,7 @@ import org.springframework.stereotype.Component;
 
 import com.example.demo.Domain.Categoria.Categoria;
 import com.example.demo.Domain.Produto.Produto;
-import com.example.demo.Dto.ProdutoDto;
+import com.example.demo.dto.ProdutoDto;
 
 @Component
 public class ProdutoMapper {
